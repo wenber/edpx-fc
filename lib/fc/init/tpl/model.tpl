@@ -1,5 +1,5 @@
 /**
- * @file Model定义
+ * @file ${desc} - Model定义
  * @author ${author}
  */
 
@@ -12,7 +12,7 @@ define(function (require) {
     var Model = require('er/Model');
     <!-- /if -->
     /**
-     * Model定义
+     * ${desc} - Model定义
      * @constructor
      * @extends {Model}
      */

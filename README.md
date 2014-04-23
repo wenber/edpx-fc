@@ -36,16 +36,14 @@ sudo npm install -g edpx-fc
 
 + mvc - 初始化符合er的mvc文件
 
-### Options
-
-    --prefix - 指定文件名称前缀
-
 ### 三级命令 edp fc init mvc
 
 Options：
 
-    --with-ef - 标记需要使用扩展自EF的类而不是ER
+    --prefix - 指定文件名称前缀
     --template - 指定模板文件的target名称
+    --desc - 指定模块的描述信息，会在文件的头部注释中体现
+    --with-ef - 标记需要使用扩展自EF的类而不是ER
 
 默认初始化文件列表：
 

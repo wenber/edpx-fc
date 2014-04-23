@@ -1,5 +1,5 @@
 /**
- * @file View定义
+ * @file ${desc} - View定义
  * @author ${author}
  */
 
@@ -18,7 +18,7 @@ define(function (require) {
     require('css!./${style}.less');
 
     /**
-     * View定义
+     * ${desc} - View定义
      * @constructor
      * @extends {View}
      */

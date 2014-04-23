@@ -1,5 +1,5 @@
 /**
- * @file Action定义
+ * @file ${desc} - Action定义
  * @author ${author}
  */
 
@@ -9,7 +9,7 @@ define(function (require) {
     var Action = require('er/Action');
 
     /**
-     * Action定义
+     * ${desc} - Action定义
      * @constructor
      * @extends {Action}
      */
