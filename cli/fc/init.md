@@ -1,26 +1,3 @@
-edpx-fc
-=======
-
-edpx扩展fc脚手架
-
-# 安装方式
-
-## npm link
-
-```javascript
-git clone git://github.com/fcfe/edpx-fc.git
-cd edpx-fc
-sudo npm link .
-```
-
-## npm install
-
-```javascript
-sudo npm install -g edpx-fc
-```
-
-# 使用
-
 ## 二级命令 edp fc init
 
 在当前目录下初始化符合命令格式的文件

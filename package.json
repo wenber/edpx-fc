@@ -1,0 +1,27 @@
+{
+  "name": "edpx-fc",
+  "version": "0.0.1",
+  "description": "edpx扩展脚手架命令fc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fcfe/edpx-fc.git"
+  },
+  "dependencies": {
+    "edp-core": "~1.0.25",
+    "edp-config": "~1.0.2",
+    "etpl": "~2.1.0"
+  },
+  "keywords": [
+    "edp", "edpx", "fc"
+  ],
+  "author": "leowang721@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fcfe/edpx-fc/issues"
+  },
+  "homepage": "https://github.com/fcfe/edpx-fc"
+}
