@@ -28,7 +28,7 @@ sudo npm install -g edpx-fc
 ### Usages
 
     edp fc init command 
-    edp fc init mvc [--prefix=prefixName] [--with-ef]
+    edp fc init mvc [--prefix=prefixName] [--with-ef=true]
 
 ### Commands
 
