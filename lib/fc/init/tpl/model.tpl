@@ -14,7 +14,7 @@ define(function (require) {
     /**
      * ${desc} - Model定义
      * @constructor
-     * @extends {Model}
+     * @extends {<!-- if: ${withEF} -->UIModel<!-- else: -->Model<!--/if -->}
      */
     var ${model} = util.derive(<!-- if: ${withEF} -->UIModel<!-- else: -->Model<!--/if -->);
 

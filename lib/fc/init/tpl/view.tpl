@@ -20,7 +20,7 @@ define(function (require) {
     /**
      * ${desc} - View定义
      * @constructor
-     * @extends {View}
+     * @extends {<!-- if: ${withEF} -->UIView<!-- else: -->View<!--/if -->}
      */
     var ${view} = util.derive(<!-- if: ${withEF} -->UIView<!-- else: -->View<!--/if -->);
 
@@ -29,12 +29,16 @@ define(function (require) {
      */
     ${view}.prototype.template = '${template}';
 
+    <!-- if: !${withEF} -->
     /**
-     * 界面渲染完成之后的初始处理
+     * 界面渲染完成之后的事件处理
      */
     ${view}.prototype.enterDocument = function () {
         var me = this;
     };
+    <!-- else: -->
+    // EF的UIView占用了enterDocument方法
+    <!-- /if -->
 
     return ${view};
 });
