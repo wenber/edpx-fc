@@ -38,6 +38,16 @@ define(function (require) {
     };
     <!-- else: -->
     // EF的UIView占用了enterDocument方法
+
+    /**
+     * ui的属性配置
+     */
+    ${view}.prototype.uiProperties = {};
+
+    /**
+     * ui的事件配置
+     */
+    ${view}.prototype.uiEvents = {};
     <!-- /if -->
 
     return ${view};
