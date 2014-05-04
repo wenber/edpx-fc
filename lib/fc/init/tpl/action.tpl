@@ -6,7 +6,10 @@
 define(function (require) {
 
     var util = require('common/util');
+
     var Action = require('er/Action');
+    var ${model} = require('./${model}');
+    var ${view} = require('./${view}');
 
     /**
      * ${desc} - Action定义
@@ -15,8 +18,8 @@ define(function (require) {
      */
     var ${action} = util.derive(Action);
 
-    ${action}.prototype.modelType = require('./${model}');
-    ${action}.prototype.viewType = require('./${view}');
+    ${action}.prototype.modelType = ${model};
+    ${action}.prototype.viewType = ${view};
 
     /**
      * 初始化行为交互
