@@ -4,29 +4,27 @@
  */
 
 define(function (require) {
-
-    var util = require('common/util');
-
-    var Action = require('er/Action');
-    var ${model} = require('./${model}');
-    var ${view} = require('./${view}');
-
+    
     /**
      * ${desc} - Action定义
+     *
+     * @class ?
+     * @extends {er.Action}
      * @constructor
-     * @extends {Action}
      */
-    var ${action} = util.derive(Action);
+    var overrides = {};
 
-    ${action}.prototype.modelType = ${model};
-    ${action}.prototype.viewType = ${view};
+    overrides.modelType = require('./${model}');
+    overrides.viewType = require('./${view}');
 
     /**
      * 初始化行为交互
      */
-    ${action}.prototype.initBehavior = function () {
-        var me = this;
+    overrides.initBehavior = function () {
+        
     };
+
+    var ${action} = require('eoo').create(require('er/Action'), overrides);
 
     return ${action};
 });

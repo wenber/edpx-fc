@@ -5,30 +5,26 @@
 
 define(function (require) {
 
-    var util = require('common/util');
-    <!-- if: ${withEF} -->
-    var UIModel = require('ef/UIModel');
-    <!-- else: -->
-    var Model = require('er/Model');
-    <!-- /if -->
     /**
      * ${desc} - Model定义
+     *
+     * @class ?
+     * @extends {<!-- if: ${withEF} -->ef.UIModel<!-- else: -->er.Model<!--/if -->}
      * @constructor
-     * @extends {<!-- if: ${withEF} -->UIModel<!-- else: -->Model<!--/if -->}
      */
-    var ${model} = util.derive(<!-- if: ${withEF} -->UIModel<!-- else: -->Model<!--/if -->);
+    var overrides = {};
 
     /**
      * 请求数据以及准备基础数据
      */
-    ${model}.prototype.datasource = {};
+    overrides.datasource = {};
 
     /**
      * 数据请求完成之后的后置处理
      */
-    ${model}.prototype.prepare = function () {
-        var me = this;
-    };
+    overrides.prepare = function () {};
+
+    var ${model} = require('eoo').create(require('<!-- if: ${withEF} -->ef/UIModel<!-- else: -->er/Model<!--/if -->'), overrides);
 
     return ${model};
 });

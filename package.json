@@ -13,7 +13,9 @@
     "dependencies": {
         "edp-core": "~1.0.25",
         "edp-config": "~1.0.2",
-        "etpl": "~2.1.0"
+        "etpl": "~2.1.0",
+        "chalk": "~0.4.0",
+        "edpx-timeline": "~0.0.1"
     },
     "keywords": [
         "edp", "edpx", "fc"

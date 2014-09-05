@@ -5,50 +5,46 @@
 
 define(function (require) {
 
-    var util = require('common/util');
-    <!-- if: ${withEF} -->
-    var UIView = require('ef/UIView');
-    <!-- else: -->
-    var View = require('er/View');
-    <!-- /if -->
     // 加载tpl
-    require('etpl/tpl!./${tpl}.tpl');
+    require('etpl/tpl!./${tpl}.html');
 
     // 加载样式
     require('css!./${style}.less');
 
     /**
      * ${desc} - View定义
+     *
+     * @class ?
+     * @extends {<!-- if: ${withEF} -->ef.UIView<!-- else: -->er.View<!--/if -->}
      * @constructor
-     * @extends {<!-- if: ${withEF} -->UIView<!-- else: -->View<!--/if -->}
      */
-    var ${view} = util.derive(<!-- if: ${withEF} -->UIView<!-- else: -->View<!--/if -->);
+    var overrides = {};
 
     /**
-     * 声明所使用的模板
+     * @property {string} [template] 所使用的模板
      */
-    ${view}.prototype.template = '${template}';
+    overrides.template = '${template}';
 
     <!-- if: !${withEF} -->
     /**
      * 界面渲染完成之后的事件处理
      */
-    ${view}.prototype.enterDocument = function () {
-        var me = this;
-    };
+    overrides.enterDocument = function () {};
     <!-- else: -->
-    // EF的UIView占用了enterDocument方法
+    // EF的UIView占用了enterDocument方法，不能使用
 
     /**
      * ui的属性配置
      */
-    ${view}.prototype.uiProperties = {};
+    overrides.uiProperties = {};
 
     /**
      * ui的事件配置
      */
-    ${view}.prototype.uiEvents = {};
+    overrides.uiEvents = {};
     <!-- /if -->
+
+    var ${view} = require('eoo').create(require('<!-- if: ${withEF} -->ef/UIView<!-- else: -->er/View<!--/if -->'), overrides);
 
     return ${view};
 });
