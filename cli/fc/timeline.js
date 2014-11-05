@@ -5,7 +5,7 @@
 
 exports.cli = {
     description: 'chrome的timeline数据分析，分析速度，凤巢专用',
-    options: ['file:', 'folder:'],
+    options: ['file:', 'pattern:'],
     main: function (args, opts) {
         require('../../lib/fc/timeline').process(args, opts);
     }
