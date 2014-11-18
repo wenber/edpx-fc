@@ -4,7 +4,12 @@
  * @author ${author}(${email})
  */
 define(function (require) {
-    var confList = [];
+    var confList = [
+        {
+            type: '/${moduleName}',
+            path: '${moduleName}/Action'
+        }
+    ];
 
     return confList;
 });

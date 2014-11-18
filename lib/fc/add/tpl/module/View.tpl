@@ -23,7 +23,7 @@ define(function (require) {
     /**
      * @property {string} [template] 所使用的模板
      */
-    overrides.template = '${tplName}';
+    overrides.template = '${className}';
 
     /**
      * 界面渲染完成之后的事件处理

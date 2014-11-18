@@ -4,8 +4,8 @@
  */
 
 exports.cli = {
-    description: '在当前目录下初始化符合ER的MVC要素文件',
-    options: ['mvc', 'prefix:', 'template:', 'desc:', 'with-ef:'],
+    description: '在当前目录下进行符合凤巢性质的项目初始化工作',
+    options: ['force'],
     main: function (args, opts) {
         require('../../lib/fc/init').process(args, opts);
     }

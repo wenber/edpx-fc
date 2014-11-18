@@ -8,16 +8,17 @@ var edp = require('edp-core');
 
 var cli = {};
 
-cli.description = '添加一个模块，同时自动初始化需要的文件';
+cli.description = '添加一个项目需要的文件或模块';
 
-cli.options = ['force', 'desc:', 'entry'];
+cli.options = ['desc:', 'force', 'entry'];
 
 cli.main = function (args, opts) {
 
     // 检查当前是否是一个edp project的根目录
     var projectInfo = require('edp-project').getInfo();
     if (!projectInfo) {
-        edp.log.warn('你正在一个非edp project目录中运行命令，添加行为在当前目录处理！');
+        edp.log.error('Sorry，此命令只能在edp project中使用！');
+        return;
     }
 
     require('../../lib/fc/add').process(args, opts);
