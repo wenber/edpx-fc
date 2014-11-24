@@ -6,8 +6,8 @@
 define(function (require) {
     var confList = [
         {
-            type: '/${moduleName}',
-            path: '${moduleName}/Action'
+            path: '/${moduleName}',
+            type: '${moduleName}/Action'
         }
     ];
 
