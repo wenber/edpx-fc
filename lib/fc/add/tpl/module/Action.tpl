@@ -4,6 +4,8 @@
  * @author ${author}(${email})
  */
 define(function (require) {
+
+    var BaseAction = require('fc-view/mvc/BaseAction');
     
     /**
      * ${desc} - Action定义
@@ -23,7 +25,7 @@ define(function (require) {
         
     };
 
-    var Action = require('eoo').create(require('er/Action'), overrides);
+    var Action = require('eoo').create(BaseAction, overrides);
 
     return Action;
 });

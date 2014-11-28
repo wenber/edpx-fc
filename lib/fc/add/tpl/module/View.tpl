@@ -6,6 +6,8 @@
 
 define(function (require) {
 
+    var BaseView = require('fc-view/mvc/BaseView');
+
     // 加载tpl
     require('etpl/tpl!./tpl.html');
 
@@ -21,7 +23,7 @@ define(function (require) {
     var overrides = {};
 
     /**
-     * @property {string} [template] 所使用的模板
+     * @property {string} template 所使用的模板
      */
     overrides.template = '${className}';
 
@@ -30,7 +32,7 @@ define(function (require) {
      */
     overrides.enterDocument = function () {};
 
-    var View = require('eoo').create(require('er/View'), overrides);
+    var View = require('eoo').create(BaseView, overrides);
 
     return View;
 });

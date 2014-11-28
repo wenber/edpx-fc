@@ -6,6 +6,8 @@
 
 define(function (require) {
 
+    var BaseModel = require('fc-view/mvc/BaseModel');
+
     /**
      * ${desc} - Model定义
      *
@@ -24,7 +26,7 @@ define(function (require) {
      */
     overrides.prepare = function () {};
 
-    var Model = require('eoo').create(require('er/Model'), overrides);
+    var Model = require('eoo').create(BaseModel, overrides);
 
     return Model;
 });

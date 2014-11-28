@@ -4,12 +4,14 @@
  * @author ${author}(${email})
  */
 define(function (require) {
+
+    var ActionView = require('fc-vew/view/ActionView')
     
     /**
      * ${desc} - Entry定义 - 模块服务界面入口
      *
      * @class
-     * @extends {fc.view.BasicView}
+     * @extends {fc.view.ActionView}
      */
     var overrides = {};
 
@@ -29,7 +31,7 @@ define(function (require) {
         this.$super([options]);
     };
 
-    var Entry = require('eoo').create(require('fc/view/BasicView'), overrides);
+    var Entry = require('eoo').create(ActionView, overrides);
 
     return Entry;
 });

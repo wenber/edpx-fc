@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="author" content="wangkemiao" />
     <title>百度推广</title>
-    <script src="dep/performance/performance.js"></script>
     <script type="text/javascript">
         performance.mark('performance_static_html_parse');
     </script>
@@ -45,7 +44,7 @@
         <div id="header"></div>
         <div id="main"></div>
         <div id="footer"></div>
-        <div id="Loading">
+        <div id="message-global-main">
             <img src="src/resource/img/loading.gif">
             正在读取数据，请稍候...
         </div>
@@ -72,7 +71,7 @@
             ],
             'config': { 'flags': { 'devtoggle': true } }
         });
-        require['main'];
+        require(['main']);
     </script>
 </body>
 </html>
