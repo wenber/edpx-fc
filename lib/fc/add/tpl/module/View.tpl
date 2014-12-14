@@ -1,7 +1,7 @@
 /**
  * @file ${desc} - View定义
  *
- * @author ${author}(${email})
+ * @author ${author} (${email})
  */
 
 define(function (require) {
@@ -25,7 +25,7 @@ define(function (require) {
     /**
      * @property {string} template 所使用的模板
      */
-    overrides.template = '${className}';
+    overrides.template = '${id}';
 
     /**
      * 界面渲染完成之后的事件处理

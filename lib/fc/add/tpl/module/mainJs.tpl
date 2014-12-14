@@ -1,11 +1,11 @@
 /**
  * @file ${desc}
  *
- * @author ${author}(${email})
+ * @author ${author} (${email})
  */
 
 define(function (require) {
-    
+
     var _ = require('underscore');
     var ajax = require('fc-ajax');
 
@@ -15,7 +15,7 @@ define(function (require) {
     require('er/controller').registerAction(
         _.flatten(require('./actionConf'))
     );
-    
+
     require('fc-ajax/config').url = 'request.ajax';
 
     ajax.request('GET/basicInfo').then(

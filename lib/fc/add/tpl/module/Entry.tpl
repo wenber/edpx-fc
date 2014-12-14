@@ -1,12 +1,12 @@
 /**
  * @file ${desc} - Entry定义 - 模块服务界面入口
  *
- * @author ${author}(${email})
+ * @author ${author} (${email})
  */
 define(function (require) {
 
     var ActionView = require('fc-vew/view/ActionView')
-    
+
     /**
      * ${desc} - Entry定义 - 模块服务界面入口
      *

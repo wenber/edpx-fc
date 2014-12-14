@@ -1,12 +1,12 @@
 /**
  * @file ${desc} - Action定义
  *
- * @author ${author}(${email})
+ * @author ${author} (${email})
  */
 define(function (require) {
 
     var BaseAction = require('fc-view/mvc/BaseAction');
-    
+
     /**
      * ${desc} - Action定义
      *
@@ -22,7 +22,7 @@ define(function (require) {
      * 初始化行为交互
      */
     overrides.initBehavior = function () {
-        
+
     };
 
     var Action = require('eoo').create(BaseAction, overrides);
