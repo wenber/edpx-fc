@@ -28,12 +28,12 @@
     |-----------promise
     |-----------underscore
     doc
-    resource
-    |-----------css
-    |-----------img
     src
     |-----------entry
     |-----------module
+    |-----------resource
+    |           |-----------css
+    |           |-----------img
     |-----------actionConf.js
     |-----------main.js
     test

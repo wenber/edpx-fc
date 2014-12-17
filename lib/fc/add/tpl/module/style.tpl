@@ -3,4 +3,4 @@
  *
  * @author ${author} (${email})
  */
-#${id} {}
+.${className} {}
