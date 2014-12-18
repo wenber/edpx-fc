@@ -1,62 +1,44 @@
 edpx-fc
 =======
 
-edpx扩展fc脚手架
+edpx-fc（efc）是基于edp的插件机制开发的凤巢脚手架工具，当前针对的服务主要为：
+
+    1) 凤巢版项目初始化处理
+    2) 模块/文件添加，并自动处理引用
+    3) webserver服务【暂未提供】
+    4) mock服务【暂未提供】
+    5) 自动化测试【暂未提供】
+    6) CR处理【暂未提供】
 
 # 安装方式
+
+## edp install
+
+```javascript
+edp fc
+```
 
 ## npm link
 
 ```javascript
 git clone git://github.com/fcfe/edpx-fc.git
 cd edpx-fc
-sudo npm link .
+npm link .
 ```
 
 ## npm install
 
 ```javascript
-sudo npm install -g edpx-fc
+npm install -g edpx-fc
 ```
 
 # 使用
 
-## 二级命令 edp fc init
+基于edp的插件模式，已经集成了—help指令说明
 
-在当前目录下初始化符合命令格式的文件
+efc是edp fc的缩写，在安装完成之后即可直接使用此缩写命令
 
-### Usages
+### 二级命令
 
-    edp fc init command 
-    edp fc init mvc [--prefix=prefixName] [--with-ef=true]
-
-### Commands
-
-第三级命令：
-
-+ mvc - 初始化符合er的mvc文件
-
-### 三级命令 edp fc init mvc
-
-Options：
-
-    --prefix - 指定文件名称前缀
-    --template - 指定模板文件的target名称
-    --desc - 指定模块的描述信息，会在文件的头部注释中体现
-    --with-ef - 标记需要使用扩展自EF的类而不是ER
-
-默认初始化文件列表：
-
-+ Action.js
-+ Model.js
-+ View.js
-+ tpl.tpl
-+ style.less
-
-如果使用了前缀`Index`，则为：
-
-+ IndexAction.js
-+ IndexModel.js
-+ IndexView.js
-+ index.tpl
-+ index.less
+    * efc add：添加行为，添加符合命令格式的文件
+    * efc init：初始化一个符合凤巢特性的项目

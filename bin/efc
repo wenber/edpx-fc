@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+var spawn = require( '../lib/fc/util/spawn' );
+
+var argv = ['fc'].concat(process.argv.slice(2));
+spawn('edp', argv);

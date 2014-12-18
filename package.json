@@ -1,6 +1,6 @@
 {
     "name": "edpx-fc",
-    "version": "0.0.4",
+    "version": "0.1.0-alpha.6",
     "description": "edpx扩展脚手架命令fc",
     "main": "index.js",
     "scripts": {
@@ -11,12 +11,23 @@
         "url": "git://github.com/fcfe/edpx-fc.git"
     },
     "dependencies": {
-        "edp-core": "~1.0.25",
+        "edp-core": "~1.0.28",
         "edp-config": "~1.0.2",
-        "etpl": "~2.1.0"
+        "edp-project": "~0.6.1",
+        "edp-webserver": "~1.0.16",
+        "etpl": "~3.0.0",
+        "chalk": "~0.4.0",
+        "node-promise": "~0.5.4",
+        "mkdirp": "~0.5.0",
+        "esprima": "^1.2.2",
+        "estraverse": "^1.7.0",
+        "escodegen": "~1.4.0"
+    },
+    "bin": {
+        "efc": "./bin/efc"
     },
     "keywords": [
-        "edp", "edpx", "fc"
+        "edp", "edpx", "fc", "efc"
     ],
     "author": "leowang721@gmail.com",
     "license": "MIT",

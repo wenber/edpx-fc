@@ -4,8 +4,8 @@
  * edp fc
  */
 exports.cli = {
-    description: 'edpx扩展脚手架命令edp fc',
+    description: 'edpx扩展脚手架命令efc',
     main: function(args, opts) {
-        console.log('See edp fc --help');
+        console.log('See efc --help');
     }
 };
