@@ -1,7 +1,7 @@
 /**
  * @file ${desc} - View定义
  *
- * @author ${author} (${email})
+ * @author ${author}(${email})
  */
 
 define(function (require) {

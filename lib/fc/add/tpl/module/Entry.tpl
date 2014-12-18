@@ -1,7 +1,7 @@
 /**
  * @file ${desc} - Entry定义 - 模块服务界面入口
  *
- * @author ${author} (${email})
+ * @author ${author}(${email})
  */
 define(function (require) {
 
