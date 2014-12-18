@@ -3,15 +3,16 @@
  *
  * @author ${author}(${email})
  */
+
 define(function (require) {
 
-    var BaseAction = require('fc-view/mvc/BaseAction');
+    var EntryAction = require('fc-view/mvc/EntryAction');
 
     /**
      * ${desc} - Action定义
      *
      * @class
-     * @extends {er.Action}
+     * @extends {fc-view.EntryAction}
      */
     var overrides = {};
 
@@ -25,7 +26,7 @@ define(function (require) {
 
     };
 
-    var Action = require('eoo').create(BaseAction, overrides);
+    var Action = require('eoo').create(EntryAction, overrides);
 
     return Action;
 });

@@ -1,6 +1,6 @@
 {
     "name": "edpx-fc",
-    "version": "0.1.0-alpha.3",
+    "version": "0.1.0-alpha.6",
     "description": "edpx扩展脚手架命令fc",
     "main": "index.js",
     "scripts": {
