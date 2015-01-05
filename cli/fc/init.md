@@ -30,11 +30,18 @@
     doc
     src
     |-----------entry
+                |-----------404
+                |-----------500
+                |-----------style.less
+                |-----------actionConf.js
     |-----------module
+                |-----------style.less
+                |-----------actionConf.js
     |-----------resource
     |           |-----------css
     |           |-----------img
     |-----------actionConf.js
+    |-----------style.less
     |-----------main.js
     test
     tool

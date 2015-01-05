@@ -2,6 +2,7 @@
  * @file ${desc} - Action定义
  *
  * @author ${author}(${email})
+ * @date ${date}
  */
 
 define(function (require) {

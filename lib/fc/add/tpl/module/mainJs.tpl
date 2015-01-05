@@ -2,6 +2,7 @@
  * @file ${desc}
  *
  * @author ${author}(${email})
+ * @date ${date}
  */
 
 define(function (require) {

@@ -24,7 +24,8 @@
         "escodegen": "~1.4.0"
     },
     "bin": {
-        "efc": "./bin/efc"
+        "efc": "./bin/efc",
+        "efc-debug": "node --debug-brk ./bin/efc"
     },
     "keywords": [
         "edp", "edpx", "fc", "efc"
