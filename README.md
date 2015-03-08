@@ -46,4 +46,5 @@ efc是edp fc的缩写，在安装完成之后即可直接使用此缩写命令
     * efc add：添加行为，添加符合命令格式的文件和模块
     
 # 实现原理
-    以edp为核心依赖，通过调用require('child_process').spawn(edp命令, efc后面的参数，其他options配置)创建子进程, 详见edp插件扩展机制。
+    以edp为核心依赖，通过调用require('child_process').spawn(edp命令, efc后面的参数，其他options配置)
+    创建子进程, 详见edp插件扩展机制。
