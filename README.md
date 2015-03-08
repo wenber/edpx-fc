@@ -40,5 +40,9 @@ efc是edp fc的缩写，在安装完成之后即可直接使用此缩写命令
 
 ### 二级命令
 
-    * efc add：添加行为，添加符合命令格式的文件
     * efc init：初始化一个符合凤巢特性的项目
+    * efc start: 初始化完成后即可启动server
+    * efc add：添加行为，添加符合命令格式的文件
+    
+# 实现原理
+    以edp为核心依赖，通过调用require('child_process').spawn(edp命令, efc后面的参数，其他options配置)创建子进程。
